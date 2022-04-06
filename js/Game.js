@@ -120,7 +120,6 @@ class Game {
     this.leader2.position(width / 3 - 50, 130);
   }
 
-
   play() { // chamada dentro da função draw!
     this.handleElements(); 
  
@@ -249,9 +248,6 @@ class Game {
       }
     }
   }
-
-
-
 
   showRank() {
     swal({
