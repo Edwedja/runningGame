@@ -145,6 +145,7 @@ class Game {
         if ( allPlayers[plr].life <= 0) {
           cars[index - 1].changeImage("blast");
           cars[index - 1].scale = 0.3;
+          
         }
 
         cars[index - 1].position.x = x;
@@ -160,7 +161,7 @@ class Game {
           this.handleObstacleCollision(index); //
           this.handleCarACollisionWithCarB(index);
 
-          // parando o carro
+         // parando o carro
           if (player.life <= 0) {
             this.blast = true;
             this.playerMoving = false;
